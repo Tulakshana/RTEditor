@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5AA97AE15874B150012B99B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AA97AD15874B150012B99B /* UIKit.framework */; };
+		F5AA97B015874B150012B99B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AA97AF15874B150012B99B /* Foundation.framework */; };
+		F5AA97B215874B150012B99B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AA97B115874B150012B99B /* CoreGraphics.framework */; };
+		F5AA97B815874B150012B99B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5AA97B615874B150012B99B /* InfoPlist.strings */; };
+		F5AA97BA15874B150012B99B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AA97B915874B150012B99B /* main.m */; };
+		F5AA97BE15874B150012B99B /* RTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AA97BD15874B150012B99B /* RTAppDelegate.m */; };
+		F5AA97C115874B150012B99B /* RTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AA97C015874B150012B99B /* RTViewController.m */; };
+		F5AA97C415874B150012B99B /* RTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5AA97C215874B150012B99B /* RTViewController.xib */; };
+		F5AA97D8158763100012B99B /* keyboardHide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5AA97D7158763100012B99B /* keyboardHide@2x.png */; };
+		F5AA97DA158763180012B99B /* keyboardHide.png in Resources */ = {isa = PBXBuildFile; fileRef = F5AA97D9158763180012B99B /* keyboardHide.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F5AA97A915874B150012B99B /* RTEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5AA97AD15874B150012B99B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F5AA97AF15874B150012B99B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F5AA97B115874B150012B99B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F5AA97B515874B150012B99B /* RTEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RTEditor-Info.plist"; sourceTree = "<group>"; };
+		F5AA97B715874B150012B99B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5AA97B915874B150012B99B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5AA97BB15874B150012B99B /* RTEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTEditor-Prefix.pch"; sourceTree = "<group>"; };
+		F5AA97BC15874B150012B99B /* RTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTAppDelegate.h; sourceTree = "<group>"; };
+		F5AA97BD15874B150012B99B /* RTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTAppDelegate.m; sourceTree = "<group>"; };
+		F5AA97BF15874B150012B99B /* RTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTViewController.h; sourceTree = "<group>"; };
+		F5AA97C015874B150012B99B /* RTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTViewController.m; sourceTree = "<group>"; };
+		F5AA97C315874B150012B99B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RTViewController.xib; sourceTree = "<group>"; };
+		F5AA97D7158763100012B99B /* keyboardHide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keyboardHide@2x.png"; path = "RTEditor/Resources/Images/2x/keyboardHide@2x.png"; sourceTree = "<group>"; };
+		F5AA97D9158763180012B99B /* keyboardHide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keyboardHide.png; path = RTEditor/Resources/Images/keyboardHide.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5AA97A615874B150012B99B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5AA97AE15874B150012B99B /* UIKit.framework in Frameworks */,
+				F5AA97B015874B150012B99B /* Foundation.framework in Frameworks */,
+				F5AA97B215874B150012B99B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5AA979E15874B150012B99B = {
+			isa = PBXGroup;
+			children = (
+				F5AA97CA15874EB70012B99B /* Images */,
+				F5AA97B315874B150012B99B /* RTEditor */,
+				F5AA97AC15874B150012B99B /* Frameworks */,
+				F5AA97AA15874B150012B99B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5AA97AA15874B150012B99B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5AA97A915874B150012B99B /* RTEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5AA97AC15874B150012B99B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5AA97AD15874B150012B99B /* UIKit.framework */,
+				F5AA97AF15874B150012B99B /* Foundation.framework */,
+				F5AA97B115874B150012B99B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5AA97B315874B150012B99B /* RTEditor */ = {
+			isa = PBXGroup;
+			children = (
+				F5AA97BC15874B150012B99B /* RTAppDelegate.h */,
+				F5AA97BD15874B150012B99B /* RTAppDelegate.m */,
+				F5AA97BF15874B150012B99B /* RTViewController.h */,
+				F5AA97C015874B150012B99B /* RTViewController.m */,
+				F5AA97C215874B150012B99B /* RTViewController.xib */,
+				F5AA97B415874B150012B99B /* Supporting Files */,
+			);
+			path = RTEditor;
+			sourceTree = "<group>";
+		};
+		F5AA97B415874B150012B99B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5AA97B515874B150012B99B /* RTEditor-Info.plist */,
+				F5AA97B615874B150012B99B /* InfoPlist.strings */,
+				F5AA97B915874B150012B99B /* main.m */,
+				F5AA97BB15874B150012B99B /* RTEditor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5AA97CA15874EB70012B99B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F5AA97D9158763180012B99B /* keyboardHide.png */,
+				F5AA97D3158762F00012B99B /* 2x */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F5AA97D3158762F00012B99B /* 2x */ = {
+			isa = PBXGroup;
+			children = (
+				F5AA97D7158763100012B99B /* keyboardHide@2x.png */,
+			);
+			name = 2x;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5AA97A815874B150012B99B /* RTEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5AA97C715874B160012B99B /* Build configuration list for PBXNativeTarget "RTEditor" */;
+			buildPhases = (
+				F5AA97A515874B150012B99B /* Sources */,
+				F5AA97A615874B150012B99B /* Frameworks */,
+				F5AA97A715874B150012B99B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RTEditor;
+			productName = RTEditor;
+			productReference = F5AA97A915874B150012B99B /* RTEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5AA97A015874B150012B99B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RT;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Eugein;
+			};
+			buildConfigurationList = F5AA97A315874B150012B99B /* Build configuration list for PBXProject "RTEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F5AA979E15874B150012B99B;
+			productRefGroup = F5AA97AA15874B150012B99B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5AA97A815874B150012B99B /* RTEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5AA97A715874B150012B99B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5AA97B815874B150012B99B /* InfoPlist.strings in Resources */,
+				F5AA97C415874B150012B99B /* RTViewController.xib in Resources */,
+				F5AA97D8158763100012B99B /* keyboardHide@2x.png in Resources */,
+				F5AA97DA158763180012B99B /* keyboardHide.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5AA97A515874B150012B99B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5AA97BA15874B150012B99B /* main.m in Sources */,
+				F5AA97BE15874B150012B99B /* RTAppDelegate.m in Sources */,
+				F5AA97C115874B150012B99B /* RTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5AA97B615874B150012B99B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5AA97B715874B150012B99B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F5AA97C215874B150012B99B /* RTViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5AA97C315874B150012B99B /* en */,
+			);
+			name = RTViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5AA97C515874B150012B99B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hywel Jones (39WQ42JYK6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hywel Jones (39WQ42JYK6)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				PROVISIONING_PROFILE = "CCF0BA1B-2B70-4627-B65D-6D669B8178C7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CCF0BA1B-2B70-4627-B65D-6D669B8178C7";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5AA97C615874B160012B99B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hywel Jones (39WQ42JYK6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "CCF0BA1B-2B70-4627-B65D-6D669B8178C7";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5AA97C815874B160012B99B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RTEditor/RTEditor-Prefix.pch";
+				INFOPLIST_FILE = "RTEditor/RTEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F5AA97C915874B160012B99B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RTEditor/RTEditor-Prefix.pch";
+				INFOPLIST_FILE = "RTEditor/RTEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5AA97A315874B150012B99B /* Build configuration list for PBXProject "RTEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5AA97C515874B150012B99B /* Debug */,
+				F5AA97C615874B160012B99B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5AA97C715874B160012B99B /* Build configuration list for PBXNativeTarget "RTEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5AA97C815874B160012B99B /* Debug */,
+				F5AA97C915874B160012B99B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5AA97A015874B150012B99B /* Project object */;
+}
