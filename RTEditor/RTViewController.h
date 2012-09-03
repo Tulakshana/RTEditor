@@ -10,9 +10,8 @@
 
 @interface RTViewController : UIViewController <UIWebViewDelegate>{
     IBOutlet UIWebView *wView;
-    NSString *webText;
     UIView *customAccView1;
-    
+    NSString *webText;
 
 }
 

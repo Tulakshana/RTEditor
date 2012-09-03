@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F565A0FB15EF792F0029B7FC /* RTEditor.html in Resources */ = {isa = PBXBuildFile; fileRef = F565A0FA15EF792F0029B7FC /* RTEditor.html */; };
+		F565A10E15EF7FF70029B7FC /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = F565A0FE15EF7FF70029B7FC /* array.c */; };
+		F565A11115EF7FF70029B7FC /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = F565A10215EF7FF70029B7FC /* buffer.c */; };
+		F565A11715EF7FF70029B7FC /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = F565A10915EF7FF70029B7FC /* markdown.c */; };
+		F565A11915EF7FF70029B7FC /* renderers.c in Sources */ = {isa = PBXBuildFile; fileRef = F565A10C15EF7FF70029B7FC /* renderers.c */; };
 		F5AA97AE15874B150012B99B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AA97AD15874B150012B99B /* UIKit.framework */; };
 		F5AA97B015874B150012B99B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AA97AF15874B150012B99B /* Foundation.framework */; };
 		F5AA97B215874B150012B99B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AA97B115874B150012B99B /* CoreGraphics.framework */; };
@@ -20,6 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F565A0FA15EF792F0029B7FC /* RTEditor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RTEditor.html; sourceTree = "<group>"; };
+		F565A0FE15EF7FF70029B7FC /* array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = array.c; sourceTree = "<group>"; };
+		F565A0FF15EF7FF70029B7FC /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
+		F565A10215EF7FF70029B7FC /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
+		F565A10315EF7FF70029B7FC /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		F565A10915EF7FF70029B7FC /* markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = markdown.c; sourceTree = "<group>"; };
+		F565A10A15EF7FF70029B7FC /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
+		F565A10C15EF7FF70029B7FC /* renderers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderers.c; sourceTree = "<group>"; };
+		F565A10D15EF7FF70029B7FC /* renderers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = renderers.h; sourceTree = "<group>"; };
 		F5AA97A915874B150012B99B /* RTEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AA97AD15874B150012B99B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F5AA97AF15874B150012B99B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,9 +65,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F565A0FD15EF7FF70029B7FC /* siuying-libupskirt-2219f29 */ = {
+			isa = PBXGroup;
+			children = (
+				F565A0FE15EF7FF70029B7FC /* array.c */,
+				F565A0FF15EF7FF70029B7FC /* array.h */,
+				F565A10215EF7FF70029B7FC /* buffer.c */,
+				F565A10315EF7FF70029B7FC /* buffer.h */,
+				F565A10915EF7FF70029B7FC /* markdown.c */,
+				F565A10A15EF7FF70029B7FC /* markdown.h */,
+				F565A10C15EF7FF70029B7FC /* renderers.c */,
+				F565A10D15EF7FF70029B7FC /* renderers.h */,
+			);
+			name = "siuying-libupskirt-2219f29";
+			path = "RTEditor/siuying-libupskirt-2219f29";
+			sourceTree = "<group>";
+		};
 		F5AA979E15874B150012B99B = {
 			isa = PBXGroup;
 			children = (
+				F565A0FD15EF7FF70029B7FC /* siuying-libupskirt-2219f29 */,
 				F5AA97CA15874EB70012B99B /* Images */,
 				F5AA97B315874B150012B99B /* RTEditor */,
 				F5AA97AC15874B150012B99B /* Frameworks */,
@@ -82,6 +113,7 @@
 		F5AA97B315874B150012B99B /* RTEditor */ = {
 			isa = PBXGroup;
 			children = (
+				F565A0FA15EF792F0029B7FC /* RTEditor.html */,
 				F5AA97BC15874B150012B99B /* RTAppDelegate.h */,
 				F5AA97BD15874B150012B99B /* RTAppDelegate.m */,
 				F5AA97BF15874B150012B99B /* RTViewController.h */,
@@ -176,6 +208,7 @@
 				F5AA97C415874B150012B99B /* RTViewController.xib in Resources */,
 				F5AA97D8158763100012B99B /* keyboardHide@2x.png in Resources */,
 				F5AA97DA158763180012B99B /* keyboardHide.png in Resources */,
+				F565A0FB15EF792F0029B7FC /* RTEditor.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +222,10 @@
 				F5AA97BA15874B150012B99B /* main.m in Sources */,
 				F5AA97BE15874B150012B99B /* RTAppDelegate.m in Sources */,
 				F5AA97C115874B150012B99B /* RTViewController.m in Sources */,
+				F565A10E15EF7FF70029B7FC /* array.c in Sources */,
+				F565A11115EF7FF70029B7FC /* buffer.c in Sources */,
+				F565A11715EF7FF70029B7FC /* markdown.c in Sources */,
+				F565A11915EF7FF70029B7FC /* renderers.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
