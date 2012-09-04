@@ -352,7 +352,6 @@
     markdown(ob, ib, &mkd_xhtml);
     
     NSString *shinyNewHTML = [NSString stringWithUTF8String: ob->data];
-    shinyNewHTML = [shinyNewHTML stringByReplacingOccurrencesOfString:@"<p>" withString:@""];
     NSLog(@"getHTMLString: %@", shinyNewHTML);
     
     bufrelease(ib);
