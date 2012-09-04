@@ -50,7 +50,7 @@
     [underlineText release];
     [removeFormatting release];
     
-
+    
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name: UIKeyboardWillShowNotification object:nil];
     
     customAccView1 = nil;
@@ -352,6 +352,7 @@
     markdown(ob, ib, &mkd_xhtml);
     
     NSString *shinyNewHTML = [NSString stringWithUTF8String: ob->data];
+    shinyNewHTML = [shinyNewHTML stringByReplacingOccurrencesOfString:@"<p>" withString:@""];
     NSLog(@"getHTMLString: %@", shinyNewHTML);
     
     bufrelease(ib);
@@ -360,6 +361,14 @@
     return shinyNewHTML;
 }
 
-
+//- (void)paste:(id)sender
+//{
+//    UIPasteboard* pasteboard = [UIPasteboard generalPasteboard];
+//    NSString* rawString = pasteboard.string;
+//    NSLog(@"rawString %@",rawString);
+//    NSString* formattedString =  rawString;// do something fun with rawString here
+//    pasteboard.string = formattedString;
+//    [super paste:sender];
+//}
 
 @end

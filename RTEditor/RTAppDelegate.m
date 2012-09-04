@@ -29,6 +29,9 @@
     self.viewController = [[[RTViewController alloc] initWithNibName:@"RTViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+//    NSString *html = @"<span class='Apple-style-span' style='color: rgb(238, 238, 238); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 17px; -webkit-tap-highlight-color: rgba(26, 26, 26, 0.296875); -webkit-composition-fill-color: rgba(175, 192, 227, 0.230469); -webkit-composition-frame-color: rgba(77, 128, 180, 0.230469); -webkit-text-size-adjust: auto; '>Welcome to EUGEIN, your partner in IT solutions. Thank you for your interest in us. We hope our site will give you an insight into what we do, who we are and how we use our knowledge and experience to ensure your company stands out from the crowd. We work with a range of companies small and large. We look forward to assisting you in your next project.</span><div><span class='Apple-style-span' style='color: rgb(238, 238, 238); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 17px; -webkit-tap-highlight-color: rgba(26, 26, 26, 0.296875); -webkit-composition-fill-color: rgba(175, 192, 227, 0.230469); -webkit-composition-frame-color: rgba(77, 128, 180, 0.230469); -webkit-text-size-adjust: auto; '><br></span></div><span class='Apple-style-span' style='color: rgb(238, 238, 238); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 17px; -webkit-tap-highlight-color: rgba(26, 26, 26, 0.296875); -webkit-composition-fill-color: rgba(175, 192, 227, 0.230469); -webkit-composition-frame-color: rgba(77, 128, 180, 0.230469); -webkit-text-size-adjust: auto; '>Welcome to EUGEIN, your partner in IT solutions. Thank you for your interest in us. We hope our site will give you an insight into what we do, who we are and how we use our knowledge and experience to ensure your company stands out from the crowd. We work with a range of companies small and large. We look forward to assisting you in your next project.</span>";
+//    NSLog(@"%@",[self flattenHTML:html trimWhiteSpace:TRUE]);
     return YES;
 }
 
@@ -47,6 +50,11 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    UIPasteboard* pasteboard = [UIPasteboard generalPasteboard];
+    NSString* rawString = pasteboard.string;
+    NSLog(@"rawString %@",rawString);
+    NSString* formattedString =  [NSString stringWithFormat:@"%@",[self flattenHTML:rawString trimWhiteSpace:FALSE]];// do something fun with rawString here
+    pasteboard.string = formattedString;
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -57,6 +65,34 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (NSString *)flattenHTML:(NSString *)html trimWhiteSpace:(BOOL)trim {
+    //http://mohrt.blogspot.com/2009/03/stripping-html-with-objective-ccocoa.html
+    
+    NSScanner *theScanner;
+    NSString *text = nil;
+    
+    theScanner = [NSScanner scannerWithString:html];
+    
+    while ([theScanner isAtEnd] == NO) {
+        
+        // find start of tag
+        [theScanner scanUpToString:@"<" intoString:NULL] ;
+        // find end of tag
+        [theScanner scanUpToString:@">" intoString:&text] ;
+        
+        // replace the found tag with a space
+        //(you can filter multi-spaces out later if you wish)
+        html = [html stringByReplacingOccurrencesOfString:
+                [ NSString stringWithFormat:@"%@>", text]
+                                               withString:@" "];
+        
+    } // while //
+    
+    // trim off whitespace
+    return trim ? [html stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] : html;
+    
 }
 
 @end
